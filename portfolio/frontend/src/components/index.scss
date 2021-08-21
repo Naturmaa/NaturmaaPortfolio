@@ -1,0 +1,281 @@
+//$color-primary: rgb(199, 22, 90);
+$color-primary: #c83cb9;
+//$color-black: #ffe4b4;
+$color-black: rgb(13, 10, 11);
+$color-white: white;
+$color-grey: #f1f1f1;
+
+// font-family: 'Bad Script', cursive;
+// font-family: 'Comfortaa', cursive;
+// font-family: 'Lobster', cursive;
+// font-family: 'Marck Script', cursive;
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Pacifico', cursive;
+// font-family: 'Philosopher', sans-serif;
+// font-family: 'Roboto Condensed', sans-serif;
+// font-family: 'STIX Two Text', serif;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  padding: 2rem 4rem;
+}
+.container--1 {
+  padding: 1rem 2rem;
+}
+
+.underline {
+  border-bottom: 1px solid $color-primary;
+  padding-bottom: 4px;
+  width: min-content;
+  white-space: nowrap;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 1rem 4rem;
+}
+
+.navbar {
+  font-family: "Bad Script", cursive;
+  background-color: $color-black;
+  justify-content: center;
+  color: white;
+  &__container {
+    background-color: transparent;
+  }
+  &__logo {
+    font-size: 2rem;
+    font-style: italic;
+  }
+}
+.hero {
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.486),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("https://d33wubrfki0l68.cloudfront.net/images/f20315b799c67d762c3c2992f87aa674e6e30d19/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  &__container {
+    padding: 40vh 10rem;
+  }
+
+  &__name {
+    color: $color-primary;
+  }
+}
+.about {
+  background-color: $color-white;
+  padding: 10vh 0;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__header {
+    text-align: center;
+  }
+  &__header--small {
+    text-align: left;
+    padding-left: 2rem;
+  }
+  &__para {
+    margin: 1rem 2rem;
+    text-align: left;
+  }
+}
+
+.box {
+  background-color: #eeeeee;
+  padding: 15px;
+  margin: 10px;
+  width: min-content;
+  float: left;
+  color: $color-black;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 1px 3px 10px #88888827;
+    color: $color-primary;
+    cursor: pointer;
+  }
+}
+
+.line {
+  width: 30vw;
+  background-color: $color-primary;
+  height: 1px;
+  align-self: center;
+  margin: 1rem auto;
+}
+
+.projects {
+  background-color: $color-grey;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 5rem 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 30px;
+}
+
+.cards {
+  max-width: 960px;
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+}
+
+.article-img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: $color-white;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+.contact {
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  color: $color-white;
+  padding: 2rem 8rem;
+  // background-color: rgb(255, 103, 129);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("https://i.pinimg.com/originals/86/c8/5d/86c85d088097b381f2db8900bfedf07b.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .card {
+    background-color: transparent;
+  }
+
+  input,
+  textarea {
+    background-color: transparent;
+    outline-color: $color-primary;
+    color: $color-white;
+    border: none;
+    border-bottom: 1px solid $color-grey;
+
+    &:focus {
+      background-color: transparent;
+      outline-color: $color-primary;
+      outline: none;
+    }
+  }
+}
+.contact__container {
+  justify-content: center;
+  align-items: center;
+}
+.contact__label {
+  color: $color-white;
+  font-size: 1.1rem;
+}
+.contact__info {
+  color: $color-grey;
+}
+.contact__container a {
+  &:hover {
+    color: $color-primary;
+    border: none;
+    text-decoration: none;
+  }
+}
+
+.btn {
+  background-color: $color-primary;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-primary;
+    width: 100%;
+  }
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+[type="text"].form-control:focus,
+[type="password"].form-control:focus,
+[type="email"].form-control:focus,
+[type="tel"].form-control:focus,
+[contenteditable].form-control:focus,
+button:focus,
+button.form-control:focus {
+  box-shadow: inset 0 -1px 0 $color-primary;
+}
+
+// .contact {
+//   // background-color: black;
+//   &__group {
+//     // background-color: pink;
+//   }
+//   &__control {
+//     // color: white;
+//     // border: none;
+//     // border-bottom: 1px solid $color-white;
+//   }
+// }
