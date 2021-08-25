@@ -9,9 +9,7 @@ class About extends Component {
                 <div className="row container">
                     <div className="column">
                         <h1 className="about__header--small">Сайн уу?</h1>
-                        <p className="about__para">My name is Ram Maheshwari and I'm a passionate Frontend Web Developer using web technologies to build amazing products and focusing on solving problems for different niches and different industries using the power of technology.
-
-I will love to hear from you. Whether it's a project, job opportunity, or just a chat. Feel free to contact me.</p>
+                        <p className="about__para">Намайг Байгалмаа гэдэг. Би бол шинэ технологи дээр суурилан шинэ бүтээл гаргах замаар суралцах дуртай веб хөгжүүлэгч.</p>
                     </div>
                     <div className="column">
                         <h1 className="about__header--small">Skill</h1>
